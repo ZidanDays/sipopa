@@ -68,7 +68,7 @@
     <!-- Carousel End -->
 
     <!-- Top Feature Start -->
-    <div class="container-fluid top-feature py-5 pt-lg-0">
+    {{-- <div class="container-fluid top-feature py-5 pt-lg-0">
       <div class="container py-5 pt-lg-0">
         <div class="row gx-0">
           <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -127,11 +127,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Top Feature End -->
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5 align-items-end">
           <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -178,11 +178,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- About End -->
 
     <!-- Facts Start -->
-    <div
+    {{-- <div
       class="container-fluid facts my-5 py-5"
       data-parallax="scroll"
       data-image-src="img/carousel-1.jpg"
@@ -219,11 +219,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Facts End -->
 
     <!-- Features Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -288,7 +288,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Features End -->
 
     <!-- Service Start -->
@@ -420,10 +420,14 @@
         </div>
       </div>
     </div>
+    <div class="text-center">
+      <a href="/persyaratan" class="btn btn-primary py-sm-3 px-sm-4">Lebih Lanjut</a>
+  </div>
+  
     <!-- Service End -->
 
     <!-- Quote Start -->
-    <div
+    {{-- <div
       class="container-fluid quote my-5 py-5"
       data-parallax="scroll"
       data-image-src="img/carousel-2.jpg"
@@ -502,11 +506,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Quote End -->
 
     <!-- Projects Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
       <div class="container">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -660,11 +664,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Projects End -->
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
       <div class="container">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -737,11 +741,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -788,6 +792,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <!-- Testimonial End --> 
 @endsection

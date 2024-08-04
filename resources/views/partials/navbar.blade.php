@@ -6,7 +6,7 @@
               class="navbar-brand d-flex align-items-center px-4 px-lg-5"
             >
               <!-- <h1 class="m-0">Pengadilan Agama Amurang</h1> -->
-              <img src="img/icon/PA AMURANG copy.png" style="width: 85%" alt="" />
+              <img src="img/icon/PA AMURANG copy.png" style="width: 60%" alt="" />
             </a>
             <button
               type="button"
@@ -24,19 +24,19 @@
                   style="text-align: center"
                   >Beranda</a
                 >
-                <a
+                {{-- <a
                   href="about.html"
                   class="nav-item nav-link {{ ($title == "Tentang Kita") ? 'active' : '' }}"
                   style="text-align: center"
                   >Tentang Kita</a
-                >
+                > --}}
                 <a href="/pelayanan" class="nav-item nav-link {{ ($title=="Pelayanan") ? "active" : "" }}" style="text-align: center">Pelayanan</a>
-                <a
+                {{-- <a
                   href="/persyaratan"
                   class="nav-item nav-link {{ ("title"=="Persyaratan") ? "active" : "" }}"
                   style="text-align: center"
                   >Persyaratan</a
-                >
+                > --}}
                 {{-- <div class="nav-item dropdown">
                   <a
                     href="#"

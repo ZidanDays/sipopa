@@ -8,7 +8,7 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/16735993830.png" rel="icon" />
+    <link href="{{ asset('img/16735993830.png') }}" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,15 +29,15 @@
     />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
   </head>
 
   <body>
@@ -59,13 +59,13 @@
       <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <img src="img/logo/pasti.png" style="width: 15vh" alt="">
+            <img src="{{ asset('img/logo/pasti.png') }}" style="width: 15vh" alt="">
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <img src="img/logo/Logo_BerAKHLAK.png" style="width: 15vh" alt="">
+            <img src="{{ asset('img/logo/Logo_BerAKHLAK.png') }}" style="width: 15vh" alt="">
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <img src="img/logo/Logo_EVP.png" style="width: 15vh" alt="">
+            <img src="{{ asset('img/logo/Logo_EVP.png') }}" style="width: 15vh" alt="">
           </div>
           {{-- <div class="h-100 d-inline-flex align-items-center me-4">
             <span class="fa fa-phone-alt me-2"></span>
@@ -97,21 +97,20 @@
     </div>
     <!-- Topbar End -->
 
-{{-- navbar start --}}
-@include('partials.navbar')
-{{-- navbar end --}}
+    {{-- navbar start --}}
+    @include('partials.navbar')
+    {{-- navbar end --}}
 
-
-{{-- body start --}}
+    {{-- body start --}}
     @yield('container')
-{{-- body end --}}
+    {{-- body end --}}
 
     <!-- Footer Start -->
-@include('partials.footer')
+    @include('partials.footer')
     <!-- Footer End -->
 
     <!-- Copyright Start -->
-@include('partials.copyright')
+    @include('partials.copyright')
     <!-- Copyright End -->
 
     <!-- Back to Top -->
@@ -124,16 +123,16 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ asset('lib/parallax/parallax.min.js') }}"></script>
+    <script src="{{ asset('lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('lib/lightbox/js/lightbox.min.js') }}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
   </body>
 </html>
