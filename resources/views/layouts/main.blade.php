@@ -38,6 +38,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/style2.css') }}" rel="stylesheet" />
   </head>
 
   <body>
@@ -134,5 +135,17 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.card-img-top').on('click', function() {
+            var targetModal = $(this).data('target');
+            $(targetModal).modal('show');
+        });
+    });
+</script>
   </body>
 </html>

@@ -18,6 +18,7 @@
                     <h2 style="color: antiquewhite">
                       Sistem <span style="color: #f1ca3f">Pelayanan Online</span> Pengadilan Agama Amurang
                     </h2>
+                    <a href="/pelayanan" class="btn btn-primary py-sm-3 px-sm-4 mt-5 p-5">Cek Perkara</a>
                     <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-4"
                       >Explore More</a
                     > -->
@@ -131,7 +132,7 @@
     <!-- Top Feature End -->
 
     <!-- About Start -->
-    {{-- <div class="container-xxl py-5">
+    <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5 align-items-end">
           <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -142,35 +143,31 @@
             />
           </div>
           <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-            <h1 class="display-1 text-primary mb-0">25</h1>
-            <p class="text-primary mb-4">Year of Experience</p>
-            <h1 class="display-5 mb-4">We Make Your Home Like A Garden</h1>
-            <p class="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-              lorem sit clita duo justo magna dolore erat amet
+            <h1 class="display-1 text-primary mb-0">7</h1>
+            <p class="text-primary mb-4">Rekam Jejak Prestasi</p>
+            <h1 class="display-5 mb-4">Melayani dengan Sepenuh Hati untuk Mewujudkan Keadilan yang Sejati</h1>
+            <p class="mb-4" style="text-align: justify">
+              Kami berkomitmen untuk memberikan layanan yang tidak hanya profesional, tetapi juga berempati. Setiap langkah yang kami ambil, mulai dari penyambutan hingga penyelesaian perkara, dilakukan dengan ketulusan hati dan integritas yang tinggi. Kami memahami bahwa proses hukum bisa menjadi pengalaman yang menegangkan dan membingungkan, oleh karena itu, kami hadir untuk memberikan dukungan penuh dengan sikap ramah dan transparan.
             </p>
-            <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+            <a class="btn btn-primary py-3 px-4" href="">Prestasi</a>
           </div>
           <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
             <div class="row g-5">
               <div class="col-12 col-sm-6 col-lg-12">
                 <div class="border-start ps-4">
                   <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                  <h4 class="mb-3">Award Winning</h4>
+                  <h4 class="mb-3">Penghargaan</h4>
                   <span
-                    >Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                    duo justo magna</span
+                    >Prestasi ini mencerminkan kerja keras seluruh tim yang selalu mengutamakan profesionalisme dan integritas dalam setiap proses hukum.</span
                   >
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-lg-12">
                 <div class="border-start ps-4">
                   <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                  <h4 class="mb-3">Dedicated Team</h4>
+                  <h4 class="mb-3">Tim Berdedikasi</h4>
                   <span
-                    >Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                    duo justo magna</span
+                    >Di balik setiap keputusan yang adil dan setiap layanan yang memuaskan di Pengadilan Agama Amurang, terdapat tim berdedikasi yang bekerja dengan sepenuh hati. Tim kami terdiri dari individu-individu profesional yang memiliki komitmen tinggi terhadap prinsip-prinsip keadilan, integritas, dan pelayanan terbaik.</span
                   >
                 </div>
               </div>
@@ -178,7 +175,7 @@
           </div>
         </div>
       </div>
-    </div> --}}
+    </div>
     <!-- About End -->
 
     <!-- Facts Start -->
@@ -331,7 +328,7 @@
                 <div class="btn-square rounded-circle mx-auto mb-3">
                   <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
                 </div>
-                <h4 class="mb-3">Hak Asu Anak</h4>
+                <h4 class="mb-3">Hak Asuh Anak</h4>
                 <p class="mb-4">
                   Hak asuh anak menurut pengadilan agama adalah hak dan kewajiban yang diberikan kepada salah satu atau kedua orang tua untuk merawat, mendidik, dan menjaga anak-anak setelah terjadi perceraian atau perpisahan.
                 </p>
@@ -421,7 +418,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="/persyaratan" class="btn btn-primary py-sm-3 px-sm-4">Lebih Lanjut</a>
+      <a href="/pelayanan" class="btn btn-primary py-sm-3 px-sm-4">Lebih Lanjut</a>
   </div>
   
     <!-- Service End -->

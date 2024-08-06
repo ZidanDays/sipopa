@@ -5,56 +5,61 @@ data-wow-delay="0.1s"
 <div class="container py-5">
   <div class="row g-5">
     <div class="col-lg-3 col-md-6">
-      <h4 class="text-white mb-4">Our Office</h4>
+      <h4 class="text-white mb-4">Kantor Kami</h4>
       <p class="mb-2">
-        <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+        <i class="fa fa-map-marker-alt me-3"></i>Jl. Trans Sulawesi, Lopana, Kec. Amurang Tim., Kabupaten Minahasa Selatan, Sulawesi Utara
       </p>
       <p class="mb-2">
-        <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+        <i class="fa fa-phone-alt me-3"></i>085174121224
       </p>
       <p class="mb-2">
-        <i class="fa fa-envelope me-3"></i>info@example.com
+        <i class="fa fa-envelope me-3"></i>pa-amurang.go.id
       </p>
       <div class="d-flex pt-2">
-        <a
+        {{-- <a
           class="btn btn-square btn-outline-light rounded-circle me-2"
           href=""
           ><i class="fab fa-twitter"></i
-        ></a>
+        ></a> --}}
         <a
           class="btn btn-square btn-outline-light rounded-circle me-2"
-          href=""
+          href="https://www.facebook.com/profile.php?id=61553731929131"
+          target="_blank"
           ><i class="fab fa-facebook-f"></i
         ></a>
         <a
           class="btn btn-square btn-outline-light rounded-circle me-2"
-          href=""
+          href="https://www.youtube.com/@paamurang6271"
+          target="_blank"
           ><i class="fab fa-youtube"></i
         ></a>
         <a
           class="btn btn-square btn-outline-light rounded-circle me-2"
-          href=""
-          ><i class="fab fa-linkedin-in"></i
+          href="https://www.instagram.com/pa.amurang/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
         ></a>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6">
+    {{-- <div class="col-lg-3 col-md-6">
       <h4 class="text-white mb-4">Services</h4>
       <a class="btn btn-link" href="">Landscaping</a>
       <a class="btn btn-link" href="">Pruning plants</a>
       <a class="btn btn-link" href="">Urban Gardening</a>
       <a class="btn btn-link" href="">Garden Maintenance</a>
       <a class="btn btn-link" href="">Green Technology</a>
-    </div>
+    </div> --}}
     <div class="col-lg-3 col-md-6">
       <h4 class="text-white mb-4">Quick Links</h4>
-      <a class="btn btn-link" href="">About Us</a>
-      <a class="btn btn-link" href="">Contact Us</a>
+      <a class="btn btn-link" href="/">Beranda</a>
+      <a class="btn btn-link" href="/pelayanan">Pelayanan</a>
+      <a class="btn btn-link" href="/kontak">Kontak Kami</a>
+      {{-- <a class="btn btn-link" href="">Contact Us</a>
       <a class="btn btn-link" href="">Our Services</a>
       <a class="btn btn-link" href="">Terms & Condition</a>
-      <a class="btn btn-link" href="">Support</a>
+      <a class="btn btn-link" href="">Support</a> --}}
     </div>
-    <div class="col-lg-3 col-md-6">
+    {{-- <div class="col-lg-3 col-md-6">
       <h4 class="text-white mb-4">Newsletter</h4>
       <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
       <div class="position-relative w-100">
@@ -70,7 +75,7 @@ data-wow-delay="0.1s"
           SignUp
         </button>
       </div>
-    </div>
+    </div> --}}
   </div>
 </div>
 </div>

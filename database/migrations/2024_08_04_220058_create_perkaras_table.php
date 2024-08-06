@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('perkaras', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_perkara')->unique();
+            $table->string('nama_perkara');
+            $table->string('slug')->unique();
+            $table->string('image');
             $table->text('deskripsi');
             $table->text('syarat');
             $table->timestamps();

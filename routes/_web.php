@@ -9,112 +9,112 @@ Route::get('/', function () {
     ]);
 });
 
-// Route::get('/{slug}', function ($slug) {
+Route::get('/{slug}', function ($slug) {
 
-//     $posts = [
-//         [
-//             'id' => '1',
-//             'perkara' => 'Pengangkatan Anak',
-//             'deskripsi' => 'Perubahan yang terjadi adalah pemindahan tanggung jawab pemeliharaan dan pengawasan dari orang tua asli kepada orang tua angkat, tetapi status anak angkat tetap sebagai anak kandung',
-//             'syarat' => [
-//                 'FC KTP Penggung dan anak angkat',
-//                 'FC Surat Nikah Penggung',
-//                 'FC Akta Kelahiran anak angkat',
-//                 'FC Kartu Keluarga anak angkat',
-//                 'Surat Keterangan Penghasilan dan pengasuhan anak dari Desa/Lurah',
-//                 'FC Surat pernyataan dari orang tua',
-//                 'Surat Izin dari orang tua kandung yang disahkan oleh lurah/desa',
-//                 'Surat Keterangan lain yang diperlukan',
-//                 'Membayar panjar biaya perkara'
-//             ],
-//             'slug' => 'pengangkatan-anak'
-//         ],
-//         [
-//             'id' => '2',
-//             'perkara' => 'Hak Asu Anak',
-//             'deskripsi' => 'Hak asuh anak menurut pengadilan agama adalah hak dan kewajiban yang diberikan kepada salah satu atau kedua orang tua untuk merawat, mendidik, dan menjaga anak-anak setelah terjadi perceraian atau perpisahan.',
-//             'syarat' => [
-//                 'FC Akta Kelahiran Anak',
-//                 'FC KTP Pemohon',
-//                 'FC Surat Nikah Pemohon',
-//                 'FC Kartu Keluarga',
-//                 'Surat Keterangan dari lurah/desa',
-//                 'Surat Pengantar dari Kepala Desa/Lurah',
-//                 'Membayar Panjar Biaya Perkara'
-//             ],
-//             'slug' => 'hak-asu-anak'
-//         ],
-//         [
-//             'id' => '3',
-//             'perkara' => "Wali A'dhal",
-//             'deskripsi' => 'merujuk kepada wali yang enggan atau menolak memberikan izin pernikahan bagi seorang wanita yang berada di bawah perwaliannya tanpa alasan yang sah atau dibenarkan oleh syariat Islam.',
-//             'syarat' => [
-//                 'FC KTP Pemohon',
-//                 'FC Surat Keterangan dari KUA',
-//                 'FC Akta Kelahiran',
-//                 'Surat Permohonan Walidhol',
-//                 'Surat Pengantar dari Kepala Desa',
-//                 'Membayar Panjar Biaya Perkara'
-//             ],
-//             'slug' => 'wali-adhal'
-//         ],
-//         [
-//             'id' => '4',
-//             'perkara' => 'Harta Bersama/Harta Gono Gini',
-//             'deskripsi' => 'harta yang diperoleh oleh pasangan suami istri selama pernikahan berlangsung. Harta ini mencakup semua jenis aset dan properti yang didapatkan oleh kedua belah pihak setelah pernikahan, tanpa memperhitungkan siapa yang secara langsung membeli atau mendapatkan aset tersebut.',
-//             'syarat' => [
-//                 'FC KTP Para Pihak',
-//                 'FC Sertifikat Hak Milik (SHM) obyek sengketa',
-//                 'FC Bukti Kepemilikan tanah (ajb, sporadik)',
-//                 'Surat Pengantar dari Kepala Desa/Lurah',
-//                 'Membayar Panjar Biaya Perkara'
-//             ],
-//             'slug' => 'harta-bersama-harta-gono-gini'
-//         ],
-//         [
-//             'id' => '5',
-//             'perkara' => 'Poligami',
-//             'deskripsi' => 'praktik di mana seorang pria menikahi lebih dari satu wanita pada waktu yang sama, sesuai dengan hukum Islam dan peraturan yang berlaku di Indonesia.',
-//             'syarat' => [
-//                 'FC KTP Pemohon dan Istri',
-//                 'FC Surat Nikah',
-//                 'Surat Keterangan Penghasilan',
-//                 'FC Akta Kelahiran Anak',
-//                 'Surat Persetujuan dari Istri yang diketahui Kepala Desa/Lurah',
-//                 'Surat Keterangan lain yang diperlukan',
-//                 'Membayar Panjar Biaya Perkara'
-//             ],
-//             'slug' => 'poligami'
-//         ],
-//         [
-//             'id' => '6',
-//             'perkara' => 'Pengesahan Nikah (Istibat Nikah)',
-//             'deskripsi' => 'proses hukum untuk mengesahkan pernikahan yang telah dilaksanakan secara agama tetapi belum tercatat atau diakui secara resmi oleh negara.',
-//             'syarat' => [
-//                 'FC KTP Suami Istri',
-//                 'FC Akta Nikah',
-//                 'FC Akta Kelahiran Anak',
-//                 'Surat Keterangan dari Kepala Desa/Lurah',
-//                 'Surat Pengantar dari KUA',
-//                 'Membayar Panjar Biaya Perkara'
-//             ],
-//             'slug' => 'pengesahan-nikah-istibat-nikah'
-//         ],
-//     ];
+    $posts = [
+        [
+            'id' => '1',
+            'perkara' => 'Pengangkatan Anak',
+            'deskripsi' => 'Perubahan yang terjadi adalah pemindahan tanggung jawab pemeliharaan dan pengawasan dari orang tua asli kepada orang tua angkat, tetapi status anak angkat tetap sebagai anak kandung',
+            'syarat' => [
+                'FC KTP Penggung dan anak angkat',
+                'FC Surat Nikah Penggung',
+                'FC Akta Kelahiran anak angkat',
+                'FC Kartu Keluarga anak angkat',
+                'Surat Keterangan Penghasilan dan pengasuhan anak dari Desa/Lurah',
+                'FC Surat pernyataan dari orang tua',
+                'Surat Izin dari orang tua kandung yang disahkan oleh lurah/desa',
+                'Surat Keterangan lain yang diperlukan',
+                'Membayar panjar biaya perkara'
+            ],
+            'slug' => 'pengangkatan-anak'
+        ],
+        [
+            'id' => '2',
+            'perkara' => 'Hak Asu Anak',
+            'deskripsi' => 'Hak asuh anak menurut pengadilan agama adalah hak dan kewajiban yang diberikan kepada salah satu atau kedua orang tua untuk merawat, mendidik, dan menjaga anak-anak setelah terjadi perceraian atau perpisahan.',
+            'syarat' => [
+                'FC Akta Kelahiran Anak',
+                'FC KTP Pemohon',
+                'FC Surat Nikah Pemohon',
+                'FC Kartu Keluarga',
+                'Surat Keterangan dari lurah/desa',
+                'Surat Pengantar dari Kepala Desa/Lurah',
+                'Membayar Panjar Biaya Perkara'
+            ],
+            'slug' => 'hak-asu-anak'
+        ],
+        [
+            'id' => '3',
+            'perkara' => "Wali A'dhal",
+            'deskripsi' => 'merujuk kepada wali yang enggan atau menolak memberikan izin pernikahan bagi seorang wanita yang berada di bawah perwaliannya tanpa alasan yang sah atau dibenarkan oleh syariat Islam.',
+            'syarat' => [
+                'FC KTP Pemohon',
+                'FC Surat Keterangan dari KUA',
+                'FC Akta Kelahiran',
+                'Surat Permohonan Walidhol',
+                'Surat Pengantar dari Kepala Desa',
+                'Membayar Panjar Biaya Perkara'
+            ],
+            'slug' => 'wali-adhal'
+        ],
+        [
+            'id' => '4',
+            'perkara' => 'Harta Bersama/Harta Gono Gini',
+            'deskripsi' => 'harta yang diperoleh oleh pasangan suami istri selama pernikahan berlangsung. Harta ini mencakup semua jenis aset dan properti yang didapatkan oleh kedua belah pihak setelah pernikahan, tanpa memperhitungkan siapa yang secara langsung membeli atau mendapatkan aset tersebut.',
+            'syarat' => [
+                'FC KTP Para Pihak',
+                'FC Sertifikat Hak Milik (SHM) obyek sengketa',
+                'FC Bukti Kepemilikan tanah (ajb, sporadik)',
+                'Surat Pengantar dari Kepala Desa/Lurah',
+                'Membayar Panjar Biaya Perkara'
+            ],
+            'slug' => 'harta-bersama-harta-gono-gini'
+        ],
+        [
+            'id' => '5',
+            'perkara' => 'Poligami',
+            'deskripsi' => 'praktik di mana seorang pria menikahi lebih dari satu wanita pada waktu yang sama, sesuai dengan hukum Islam dan peraturan yang berlaku di Indonesia.',
+            'syarat' => [
+                'FC KTP Pemohon dan Istri',
+                'FC Surat Nikah',
+                'Surat Keterangan Penghasilan',
+                'FC Akta Kelahiran Anak',
+                'Surat Persetujuan dari Istri yang diketahui Kepala Desa/Lurah',
+                'Surat Keterangan lain yang diperlukan',
+                'Membayar Panjar Biaya Perkara'
+            ],
+            'slug' => 'poligami'
+        ],
+        [
+            'id' => '6',
+            'perkara' => 'Pengesahan Nikah (Istibat Nikah)',
+            'deskripsi' => 'proses hukum untuk mengesahkan pernikahan yang telah dilaksanakan secara agama tetapi belum tercatat atau diakui secara resmi oleh negara.',
+            'syarat' => [
+                'FC KTP Suami Istri',
+                'FC Akta Nikah',
+                'FC Akta Kelahiran Anak',
+                'Surat Keterangan dari Kepala Desa/Lurah',
+                'Surat Pengantar dari KUA',
+                'Membayar Panjar Biaya Perkara'
+            ],
+            'slug' => 'pengesahan-nikah-istibat-nikah'
+        ],
+    ];
 
-//     $post = Arr::first($posts, function ($post) use ($slug) {
-//         return $post['slug'] == $slug;
-//     });
+    $post = Arr::first($posts, function ($post) use ($slug) {
+        return $post['slug'] == $slug;
+    });
 
-//     if (!$post) {
-//         abort(404, 'Pelayanan tidak ditemukan.');
-//     }
+    if (!$post) {
+        abort(404, 'Pelayanan tidak ditemukan.');
+    }
 
-//     return view('index', [
-//         "title" => 'Beranda',
-//         "post" => $posts
-//     ]);
-// });
+    return view('index', [
+        "title" => 'Beranda',
+        "post" => $posts
+    ]);
+});
 
 Route::get('/pelayanan', function () {
 
@@ -135,7 +135,6 @@ $posts =         [
             'Membayar panjar biaya perkara'
         ],
         'slug' => 'pengangkatan-anak'
-        // 'image' => 'pengangkatan anak.jpg'
     ],
     [
         'id' => '2',
@@ -400,8 +399,7 @@ Route::get('/pelayanan/{slug}', function ($slug) {
                 'Surat Keterangan lain yang diperlukan',
                 'Membayar panjar biaya perkara'
             ],
-            'slug' => 'pengangkatan-anak',
-                    'image' => 'pengangkatan anak.jpg'
+            'slug' => 'pengangkatan-anak'
         ],
         [
             'id' => '2',
@@ -654,46 +652,5 @@ Route::get('/persyaratan', function () {
 Route::get('/kontak', function () {
     return view('kontak', [
         "title" => 'Kontak'
-    ]);
-});
-
-Route::get('/prestasi', function () {
-    $achievements = [
-        [
-            'title' => 'Penilaian Keberhasilan Mediasi Pengadilan Agama Sewilayah Pengadilan Tinggi Agama Manado Tahun 2022',
-            'description' => 'Pengadilan Agama Amurang dengan bangga menerima sertifikasi prestasi dalam "Penilaian Keberhasilan Mediasi Pengadilan Agama Sewilayah Pengadilan Tinggi Agama Maando Tahun 2022." Penghargaan bergengsi ini merupakan pengakuan atas komitmen kami dalam mewujudkan proses mediasi yang efektif dan berkeadilan, serta keberhasilan kami dalam menyelesaikan sengketa secara damai dan harmonis.',
-            'image' => 'img/certificates/certificate1.jpg', // Path gambar sertifikat
-        ],
-        [
-            'title' => 'Peserta Terbaik Pertama',
-            'description' => 'Pengadilan Agama Amurang dengan bangga mengumumkan pencapaian luar biasa sebagai Peserta Terbaik Pertama pada Pelaksanaan Bimbingan Teknis bagi Hakim Pengadilan Agama Sewilayah Pengadilan Tinggi Agama Manado. Acara bergengsi ini berlangsung di Hotel Grand Whiz Megamas Manado pada tanggal 22 Mei 2024, dan menjadi ajang untuk meningkatkan kapasitas serta kualitas para hakim dalam melaksanakan tugas-tugas peradilan.',
-            'image' => 'img/certificates/certificate2.jpg',
-        ],
-        [
-            'title' => 'Sertifikasi Prestasi: Peringkat 2 Penilaian Kecepatan dan Ketepatan Pengiriman Laporan Bulanan Sewilayah Pengadilan Tinggi Agama Manado Tahun 2023',
-            'description' => 'Pengadilan Agama Amurang dengan bangga mengumumkan pencapaian luar biasa sebagai Peringkat 2 dalam Penilaian Kecepatan dan Ketepatan Pengiriman Laporan Bulanan Sewilayah Pengadilan Tinggi Agama Manado Tahun 2023. Penghargaan ini merupakan bukti nyata dari komitmen kami terhadap efisiensi dan akurasi dalam pelaporan, yang merupakan bagian integral dari operasional kami.',
-            'image' => 'img/certificates/certificate3.jpg',
-        ],
-        [
-            'title' => 'Penilaian E-Court Peringkat 1',
-            'description' => 'Pengadilan Agama Amurang dengan bangga mengumumkan pencapaian luar biasa sebagai Peringkat 1 dalam Penilaian E-Court. Penghargaan bergengsi ini adalah pengakuan atas dedikasi dan komitmen kami dalam menerapkan teknologi informasi untuk meningkatkan aksesibilitas, efisiensi, dan transparansi dalam sistem peradilan.',
-            'image' => 'img/certificates/certificate4.jpg',
-        ],
-        [
-            'title' => 'Penilaian Keberhasilan Mediasi Peringkat 2',
-            'description' => 'Pengadilan Agama Amurang dengan bangga mengumumkan pencapaian luar biasa sebagai Peringkat 2 dalam Penilaian Keberhasilan Mediasi. Penghargaan ini merupakan pengakuan atas komitmen kami dalam menyelesaikan sengketa melalui mediasi yang efektif dan harmonis, serta dedikasi kami untuk memberikan solusi terbaik bagi masyarakat.',
-            'image' => 'img/certificates/certificate5.jpg',
-        ],
-        [
-            'title' => 'Penilaian Pengelolaan SIKEP Sewilayah Pengadilan Tinggi Agama Manado Tahun 2022',
-            'description' => 'Pengadilan Agama Amurang dengan bangga mengumumkan pencapaian luar biasa dalam Penilaian Pengelolaan Sistem Informasi Kepegawaian (SIKEP) Sewilayah Pengadilan Tinggi Agama Manado Tahun 2022. Penghargaan ini merupakan pengakuan atas dedikasi dan komitmen kami dalam mengelola sistem kepegawaian dengan efisien dan transparan, memastikan bahwa setiap aspek manajemen sumber daya manusia berjalan dengan optimal.',
-            'image' => 'img/certificates/certificate6.jpg',
-        ],
-        // Tambahkan data prestasi lainnya sesuai kebutuhan
-    ];
-
-    return view('prestasi', [
-        'title' => 'Prestasi',
-        'achievements' => $achievements,
     ]);
 });
