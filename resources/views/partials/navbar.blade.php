@@ -37,7 +37,8 @@
                   >Tentang Kita</a
                 > --}}
                 <a href="/pelayanan" class="nav-item nav-link {{ ($title=="Pelayanan") ? "active" : "" }}" style="text-align: center">Pelayanan</a>
-                <a href="/struktur-organisasi" class="nav-item nav-link {{ ($title=="struktur-organisasi") ? "active" : "" }}" style="text-align: center">Struktur Organisasi</a>
+                <a href="/laporan-tahunan" class="navl-item nav-link {{ ($title=="laporan-tahunan") ? "active" : "" }}" style="text-align: center">Laporan Tahunan</a>
+                {{-- <a href="/struktur-organisasi" class="nav-item nav-link {{ ($title=="struktur-organisasi") ? "active" : "" }}" style="text-align: center">Struktur Organisasi</a> --}}
                 {{-- <a
                   href="/persyaratan"
                   class="nav-item nav-link {{ ("title"=="Persyaratan") ? "active" : "" }}"

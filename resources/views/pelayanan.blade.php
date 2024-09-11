@@ -44,7 +44,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="" />
+                            <img class="img-fluid" src="img/perkara/{{ $post['image'] }}" alt="" />
                             {{-- <img class="img-fluid" src="img/perkara/{{ $post['image'] }}" alt="" /> --}}
                         </div>
                         <div class="service-text rounded p-5">

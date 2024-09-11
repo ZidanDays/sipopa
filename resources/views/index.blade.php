@@ -7,16 +7,17 @@
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" src="img/DSC070721.JPG" alt="Image" />
+            {{-- <img class="w-100" src="img/DSC070721.JPG" alt="Image" /> --}}
+            <img class="w-100" src="img/cover3.JPG" alt="Image" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-lg-8">
                     <h1 class=" text-white mb-1 animated slideInDown">
-                      Selamat Datang di  <span style="color: #f1ca3f">SIPOPA AMURANG</span>
+                      Selamat Datang di  <br><span style="color: #f1ca3f">SIPOMAS AMURANG</span>
                     </h1>
                     <h2 style="color: antiquewhite">
-                      Sistem <span style="color: #f1ca3f">Pelayanan Online</span> Pengadilan Agama Amurang
+                      Sistem <span style="color: #f1ca3f">Pelayanan Masyarakat</span> Pengadilan<br> Agama Amurang
                     </h2>
                     <a href="/pelayanan" class="btn btn-primary py-sm-3 px-sm-4 mt-5 p-5">Cek Perkara</a>
                     <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-4"
@@ -45,6 +46,24 @@
               </div>
             </div>
           </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/dirgahayu1.jpg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7">
+                    <h1 class="text-white mb-5 animated slideInDown">
+                      DIRGAHAYU REPUBLIK INDONESIA!
+                    </h1>
+                    <p>"Kami Segenap Keluarga Besar Pengadilan Agama Amurang Mengucapkan <br><strong><span style="color: #f13f3f">Dirgahayu Republik Indonesia yang Ke - 79 & HUT Mahkamah Agung yang Ke - 79</span></strong>"</p>
+                    {{-- <a href="/persyaratan" class="btn btn-primary py-sm-3 px-sm-4"
+                      >Lebih Lanjut</a
+                    > --}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <button
           class="carousel-control-prev"
@@ -66,6 +85,8 @@
         </button>
       </div>
     </div>
+
+
     <!-- Carousel End -->
 
     <!-- Top Feature Start -->
@@ -139,17 +160,17 @@
             <img
               class="img-fluid rounded"
               data-wow-delay="0.1s"
-              src="img/about.jpg"
+              src="img/sertifikat.jpg"
             />
           </div>
           <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-            <h1 class="display-1 text-primary mb-0">7</h1>
+            <h1 class="display-1 text-primary mb-0">6</h1>
             <p class="text-primary mb-4">Rekam Jejak Prestasi</p>
             <h1 class="display-5 mb-4">Melayani dengan Sepenuh Hati untuk Mewujudkan Keadilan yang Sejati</h1>
             <p class="mb-4" style="text-align: justify">
               Kami berkomitmen untuk memberikan layanan yang tidak hanya profesional, tetapi juga berempati. Setiap langkah yang kami ambil, mulai dari penyambutan hingga penyelesaian perkara, dilakukan dengan ketulusan hati dan integritas yang tinggi. Kami memahami bahwa proses hukum bisa menjadi pengalaman yang menegangkan dan membingungkan, oleh karena itu, kami hadir untuk memberikan dukungan penuh dengan sikap ramah dan transparan.
             </p>
-            <a class="btn btn-primary py-3 px-4" href="">Prestasi</a>
+            <a class="btn btn-primary py-3 px-4" href="/prestasi">Lihat Prestasi</a>
           </div>
           <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
             <div class="row g-5">
@@ -300,121 +321,28 @@
           <h1 class="display-5 mb-5">Menurut Jenis Perkara Gugatan/Permohonan</h1>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-1.jpg" alt="" />
+          @foreach ($posts as $post)
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.{{ $loop->index * 2 + 1 }}s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="{{ asset('img/perkara/' . $post['image']) }}" alt="{{ $post['perkara'] }}" />
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="{{ asset("img/icon/icon-8.png") }}" alt="Icon" />
+                          </div>
+                          <h4 class="mb-3">{{ $post['perkara'] }}</h4>
+                          <p class="mb-4">{{ $post['deskripsi'] }}</p>
+                          {{-- <a class="btn btn-sm" href="{{ route('posts.show', $post['id']) }}"> --}}
+                            <a class="btn btn-sm" href="/pelayanan/{{ $post['slug'] }}"
+                            ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
+                          >
+                      </div>
+                  </div>
               </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Pengangkatan Anak</h4>
-                <p class="mb-4">
-                  Perubahan yang terjadi adalah pemindahan tanggung jawab pemeliharaan dan pengawasan dari orang tua asli kepada orang tua angkat, tetapi status anak angkat tetap sebagai anak kandung
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-2.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Hak Asuh Anak</h4>
-                <p class="mb-4">
-                  Hak asuh anak menurut pengadilan agama adalah hak dan kewajiban yang diberikan kepada salah satu atau kedua orang tua untuk merawat, mendidik, dan menjaga anak-anak setelah terjadi perceraian atau perpisahan.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-3.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Wali 'Adhal</h4>
-                <p class="mb-4">
-                  merujuk kepada wali yang enggan atau menolak memberikan izin pernikahan bagi seorang wanita yang berada di bawah perwaliannya tanpa alasan yang sah atau dibenarkan oleh syariat Islam.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-4.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Harta Bersama/Harta Gono Gini</h4>
-                <p class="mb-4">
-                  harta yang diperoleh oleh pasangan suami istri selama pernikahan berlangsung. Harta ini mencakup semua jenis aset dan properti yang didapatkan oleh kedua belah pihak setelah pernikahan, tanpa memperhitungkan siapa yang secara langsung membeli atau mendapatkan aset tersebut.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-5.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Poligami</h4>
-                <p class="mb-4">
-                  praktik di mana seorang pria menikahi lebih dari satu wanita pada waktu yang sama, sesuai dengan hukum Islam dan peraturan yang berlaku di Indonesia.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-6.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Pengesahan Nikah (Istibat Nikah)</h4>
-                <p class="mb-4">
-                  proses hukum untuk mengesahkan pernikahan yang telah dilaksanakan secara agama tetapi belum tercatat atau diakui secara resmi oleh negara.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Lihat Izin Persyaratan</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+          @endforeach
+      </div>
+      
       </div>
     </div>
     <div class="text-center">
@@ -791,4 +719,34 @@
       </div>
     </div> --}}
     <!-- Testimonial End --> 
+
+
+        <!-- keaslian berkas -->
+<!-- Information Section Start -->
+<section class="container my-5">
+  
+  <div class="p-4 bg-light text-center shadow-sm rounded">
+      <h2 class="mb-3">Laporan Tahunan 2023</h2>
+      <p class="lead">
+          Pengadilan Agama Amurang telah merilis laporan tahunan untuk tahun 2023. Laporan ini mencakup Jumlah Perkara, Perkara Berdasarkan Jenisnya, Kecamatan, Tingkat Pendidikan di Pengadilan Agama Amurang.
+      </p>
+      <!-- Chart Section Start -->
+<section class="container my-5">
+  <div class="card shadow">
+      <div class="card-header bg-dark text-white text-center">
+          <h2 class="card-title mb-0">Pendapatan Per Kategori (2023)</h2>
+      </div>
+      <div class="card-body">
+          <div id="containerlaporantahunan2023" style="width:100%; height:500px;"></div>
+      </div>
+  </div>
+</section>
+<!-- Chart Section End -->
+      <a href="{{ url('/laporan-tahunan') }}" class="btn btn-primary btn-lg mt-3">
+          Pelajari Lebih Lanjut
+      </a>
+  </div>
+</section>
+<!-- Information Section End -->
+    <!-- keaslian berkas  End --> 
 @endsection

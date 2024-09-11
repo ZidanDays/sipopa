@@ -1,0 +1,31 @@
+/* <!-- CSS for the WhatsApp Floating Button --> */
+
+.wa-float {
+    position: fixed;
+    width: 160px;
+    height: 50px;
+    bottom: 31px;
+    right: 90px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.wa-float:hover {
+    background-color: #128c7e;
+}
+
+.wa-icon {
+    margin-left: 8px;
+    font-size: 24px;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+}

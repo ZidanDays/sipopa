@@ -39,6 +39,8 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/style2.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/iconwa.css') }}"  rel="stylesheet" />
+      
   </head>
 
   <body>
@@ -80,27 +82,30 @@
         <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center mx-n2">
             <span>Follow Us:</span>
-            <a class="btn btn-link text-light" href=""
+            <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=61553731929131" target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a class="btn btn-link text-light" href=""
+            {{-- <a class="btn btn-link text-light" href=""
               ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
+            ></a> --}}
+            {{-- <a class="btn btn-link text-light" href=""
               ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
+            ></a> --}}
+            <a class="btn btn-link text-light" href="https://www.instagram.com/pa.amurang/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
         </div>
       </div>
     </div>
+    
     <!-- Topbar End -->
 
     {{-- navbar start --}}
     @include('partials.navbar')
     {{-- navbar end --}}
+
+
 
     {{-- body start --}}
     @yield('container')
@@ -120,6 +125,14 @@
       class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
+
+    <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6285174121224" class="wa-float" target="_blank">
+        <i class="fab fa-whatsapp wa-icon"></i>WhatsApp
+  </a>
+
+{{-- highchart --}}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -147,5 +160,318 @@
         });
     });
 </script>
+
+<script>
+  Highcharts.chart('containerlaporantahunan', {
+    title: {
+        text: 'Laporan Tahunan Perusahaan XYZ',
+        align: 'left'
+    },
+
+    subtitle: {
+        text: 'Pendapatan per Kategori. Sumber: Laporan Keuangan 2023',
+        align: 'left'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Pendapatan (dalam juta IDR)'
+        }
+    },
+
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],
+        accessibility: {
+            rangeDescription: 'Rentang: Januari hingga Desember 2023'
+        }
+    },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 0
+        }
+    },
+
+    series: [{
+        name: 'Produk A',
+        data: [450, 470, 520, 540, 600, 640, 700, 720, 710, 750, 800, 850]
+    }, {
+        name: 'Produk B',
+        data: [380, 400, 410, 420, 450, 480, 510, 530, 520, 540, 570, 600]
+    }, {
+        name: 'Produk C',
+        data: [300, 310, 320, 330, 350, 370, 390, 410, 400, 420, 440, 460]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+});
+</script>
+
+<script>
+  Highcharts.chart('containerlaporantahunan2023', {
+    title: {
+        text: 'Laporan Tahunan Perkara Diterima',
+        align: 'left'
+    },
+
+    subtitle: {
+        text: 'Jumlah Perkara Diterima per Bulan. Sumber: Data Pengadilan 2023',
+        align: 'left'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Jumlah Perkara'
+        }
+    },
+
+    xAxis: {
+        categories: ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'],
+        accessibility: {
+            rangeDescription: 'Rentang: Januari hingga Desember 2023'
+        }
+    },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 1
+        }
+    },
+
+    series: [{
+        name: 'Jumlah Perkara',
+        data: [4, 32, 40, 1, 5, 12, 8, 14, 5, 9, 2, 3]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+});
+</script>
+
+
   </body>
 </html>
+
+
+<script>
+  Highcharts.chart('containerjenislaporantiperkara', {
+    title: {
+        text: 'Perkara Berdasarkan Jenisnya',
+        align: 'left'
+    },
+
+    subtitle: {
+        text: 'Jumlah Perkara per Jenis. Sumber: Data Pengadilan 2023',
+        align: 'left'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Jumlah Perkara'
+        }
+    },
+
+    xAxis: {
+        categories: ['', 'Cerai Talak', 'Cerai Gugat', 'Dispensasi Kawin', 'Isbat Nikah', 'Isbat Nikah Contentius', 'Perwalian', 'Penguasaan Anak'],
+        accessibility: {
+            rangeDescription: 'Rentang: Jenis Perkara 2023'
+        }
+    },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 1
+        }
+    },
+
+    series: [{
+        name: 'Jumlah Perkara',
+        data: [15, 54, 18, 42, 4, 1, 1]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+});
+</script>
+
+<script>
+Highcharts.chart('containerlaporankecamatan', {
+  title: {
+      text: 'Perkara Berdasarkan Kecamatan',
+      align: 'left'
+  },
+
+  subtitle: {
+      text: 'Jumlah Perkara per Kecamatan. Sumber: Data Pengadilan 2023',
+      align: 'left'
+  },
+
+  yAxis: {
+      title: {
+          text: 'Jumlah Perkara'
+      }
+  },
+
+  xAxis: {
+      categories: ['', 'Motoling', 'Motoling Barat', 'Kumelembuay', 'Motoling Timur', 'Tompaso Baru', 'Maesaan', 'Modoinding', 'Tenga', 'Tatapaan', 'Ranoyapo', 'Sinonsayang', 'Tareran', 'Suluun Tareran', 'Amurang', 'Amurang Barat', 'Amurang Timur', 'Tumpaan'],
+      accessibility: {
+          rangeDescription: 'Kecamatan'
+      }
+  },
+
+  legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle'
+  },
+
+  plotOptions: {
+      series: {
+          label: {
+              connectorAllowed: false
+          },
+          pointStart: 1
+      }
+  },
+
+  series: [{
+      name: 'Jumlah Perkara',
+      data: [0, 0, 0, 0, 6, 1, 0, 39, 7, 0, 53, 0, 0, 15, 4, 2, 8]
+  }],
+
+  responsive: {
+      rules: [{
+          condition: {
+              maxWidth: 500
+          },
+          chartOptions: {
+              legend: {
+                  layout: 'horizontal',
+                  align: 'center',
+                  verticalAlign: 'bottom'
+              }
+          }
+      }]
+  }
+});
+</script>
+
+<script>
+    Highcharts.chart('containerlaporanpendidikanxx', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Perkara Diterima Berdasarkan Tingkat Pendidikan',
+            align: 'left'
+        },
+
+        subtitle: {
+            text: 'Pengadilan Agama Amurang Tahun 2023',
+            align: 'left'
+        },
+
+        xAxis: {
+            categories: [
+                'Tidak Sekolah',
+                'SD Sederajat',
+                'SLTP Sederajat',
+                'SLTA Sederajat',
+                'Diploma',
+                'Sarjana',
+                'Magister'
+            ],
+            title: {
+                text: 'Tingkat Pendidikan'
+            }
+        },
+
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Jumlah Perkara Masuk'
+            }
+        },
+
+        tooltip: {
+            valueSuffix: ' Perkara'
+        },
+
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+
+        series: [{
+            name: 'Jumlah Perkara Masuk',
+            data: [1, 39, 36, 52, 1, 5, 1]
+
+        }]
+    });
+    </script>
