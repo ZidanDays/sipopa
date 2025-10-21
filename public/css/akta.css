@@ -1,0 +1,93 @@
+/* Mengatur font dan margin global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container utama */
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    background-image: url("images/logo-pa.png"); /* Sesuaikan path logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px; /* Ukuran logo */
+    opacity: 0.2; /* Transparansi logo */
+}
+
+/* Konten di atas latar belakang */
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Mengatur judul */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Bagian header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Mengatur tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Mengatur footer dan details */
+.details,
+.footer {
+    margin-bottom: 20px;
+}
+
+.details p,
+.footer p {
+    margin: 5px 0;
+}
+
+/* Tabel tanpa border */
+.no-border {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.no-border td {
+    padding: 5px;
+    border: none;
+    vertical-align: top;
+}
+
+.no-border td:first-child {
+    width: 150px;
+}
+
+.no-border td:nth-child(2) {
+    width: 10px;
+}
